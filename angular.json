@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "aqui-covid"
+    }
+  },
+  "defaultProject": "aqui-covid",
+  "cli": {
+    "analytics": "c4219933-f57d-4f4d-8853-5f61b89b0f81"
+  }
 }

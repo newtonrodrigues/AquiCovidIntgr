@@ -1,0 +1,39 @@
+<h1>{{titulo}}</h1>
+
+<div style="text-align: -webkit-center;">
+<div style="width: 600px;">
+
+  <div style="margin-bottom: 20px; text-align: right;">
+    <a [routerLink]="['/pessoa/form']">
+      <img src="./../../../assets/add-icon.png" style="width: 30px;">
+    </a>
+  </div>
+
+  <table style="width: 600px;">
+    <tr style="font-weight: bold;">
+      <td style="width: 10%;">Id</td>
+      <td style="width: 50%;">Nome</td>
+      <td style="width: 30%;">CPF</td>
+      <td style="width: 5%;"></td>
+      <td style="width: 5%;"></td>
+    </tr>
+
+    <tr style="height: 50px;" *ngFor="let pessoa of pessoaList">
+        <td>{{pessoa.id}}</td>
+        <td>{{pessoa.nome}}</td>
+        <td>{{pessoa.cpf}}</td>
+        <td>
+          <img src="./../../../assets/delete-icon.png.png" style="width: 20px; cursor: pointer;" (click)="delete(pessoa.id)">
+        </td>
+        <td>
+          <img src="./../../../assets/edit-icon.png" style="width: 20px; cursor: pointer;" (click)="showEdit(pessoa)">
+        </td>
+      </tr>
+      
+
+   </table>
+
+</div>
+
+ 
+</div>
